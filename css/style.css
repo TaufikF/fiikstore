@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: Poppins;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* CSS contanct */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 8%;
+  background-color: #000000;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.contact a {
+  color: #fff;
+}
+
+/* CSS NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 8%;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.navbar .navbar-logo span {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: black;
+  display: inline-block;
+  margin: 0 1rem;
+  transition: 0.5s;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #1f1f1f;
+}
+
+.navbar .navbar-extra a {
+  color: black;
+  margin: 0 0.5rem;
+  transition: 0.5s linear;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* CSS JUMBOTRON */
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/jumbotron2.jpg);
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 2rem;
+}
+
+.jumbotron .text-box {
+  border-radius: 0.5rem;
+  padding: 3rem;
+  background-color: #141414b9;
+  width: 60%;
+  --animate-delay: 0.5s;
+}
+
+.jumbotron .text-box h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.jumbotron .text-box p {
+  color: #ffffff;
+}
+
+.jumbotron .text-box a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.jumbotron .text-box a:hover {
+  background-color: #ffffff2f;
+}
+
+h2 {
+  margin: 0 5rem;
+}
+
+/* CSS CATEGORY */
+
+.row-category {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 5rem;
+  --animate-delay: 1.2s;
+}
+
+.row-category .card-category {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  width: 20rem;
+  height: 12rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.row-category .card-category img {
+  transition: 0.5s;
+}
+
+.row-category .card-category img:hover {
+  transform: scale(1.05);
+}
+
+.row-category .card-category p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 4.5rem 0;
+  position: absolute;
+  display: block;
+}
+
+/* CSS MOST SELLING PRODUCT */
+
+.row-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0rem 5rem;
+  --animate-delay: 1.2s;
+}
+
+.row-product .card-selling {
+  position: relative;
+  width: 20rem;
+  height: 25rem;
+  line-height: 1.5rem;
+}
+
+.row-product .card-selling img {
+  border-radius: 0.5rem;
+  width: 100%;
+  background-position: center;
+}
+
+.row-product .card-selling .product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-product .card-selling p {
+  font-size: 0.8rem;
+  color: #818181;
+}
+
+.row-product .card-selling .rating {
+  display: flex;
+  align-items: center;
+}
+
+.row-product .card-selling .rating p {
+  font-size: 1rem;
+}
+
+.row-product .card-selling a {
+  border-radius: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  color: black;
+  font-weight: 400;
+  transition: 0.5s linear;
+}
+.row-product .card-selling a:hover {
+  background-color: #0000000c;
+}
+
+/* Cashback */
+.row-cashback {
+  color: #010100;
+  background-color: #e0e0e0;
+  display: flex;
+  margin: 0 5rem;
+  padding: 1rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.row-cashback .text {
+  line-height: 2.6rem;
+}
+
+.row-cashback .text h1 {
+ font-size: 3rem;
+}
+
+.row-cashback .text a {
+  background-color: #010100e5;
+  padding: 0.6rem 1rem;
+  color: #ffff;
+  transition: .5s;
+}
+
+.row-cashback .text a:hover {
+  background-color: #010100;
+}
+
+.row-cashback .card img {
+  width: 70%;
+}
+
+.border {
+  border: 1px solid #cccccc;
+  margin: 5rem 5rem 1rem 5rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+}
+
+footer .content {
+  width: 20%;
+}
+
+footer .content p {
+  margin: 1rem 0;
+  line-height: 1.5rem;
+  font-size: .8rem;
+}
+
+footer li {
+  margin: 1rem 0;
+  font-size: .8rem;
+  color: #818181;
+  list-style-type: none;
+}
+
+.footer-bottom footer .term{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom footer a,p {
+  color: #010100;
+  font-size: .9rem;
+}
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 17%;
+    right: -100%;
+    background-color: #000000dc;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s linear;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0%;
+  }
+
+  .navbar .navbar-nav a {
+    color: #fff;
+    display: block;
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .navbar .navbar-nav a:hover {
+    color: #bfc7c3;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .jumbotron .text-box {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .row-category .card-category {
+    height: 6rem;
+  }
+}
